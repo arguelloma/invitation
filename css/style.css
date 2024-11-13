@@ -76,10 +76,10 @@ h6 {
 }
 p {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.75em;
     margin: 0 0 20px;
-    color: #666;
+    color: #1b1b1b;
     font-weight: 400;
 }
 /* lists */
@@ -1030,10 +1030,10 @@ color: #e7ba74;
 }
 .section-subtitle {
     display: block;
-    color: #e7ba74;
-    font-size: 14px;
+    color: #1b1b1b;
+    font-size: 30px;
     font-weight: 400;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Cinzel', serif;
     margin-bottom: 10px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -1058,8 +1058,12 @@ color: #e7ba74;
 /* =======  Welcome style  ======= */
 .welcome {
     position: relative;
-    z-index: 20;
+    z-index: 30;
     text-align: center;
+    background-image: url('images/slider/flor01.svg'); /* Cambia a la ruta de tu imagen de la flor */
+    background-repeat: no-repeat;
+    background-position: right -150px bottom -110px; /* Posición de la flor en la esquina inferior izquierda */
+    background-size: 600px; /* Ajusta el tamaño de la flor según lo necesites */
 }
 .welcome-mt {
     margin-top: -18% !important;
@@ -1078,7 +1082,7 @@ color: #e7ba74;
     border: 12px solid rgba(255,255,255,0.2);
     border-radius: 100%;
     margin-bottom: 30px;
-        overflow: hidden;
+    overflow: hidden;
 }
 
 
