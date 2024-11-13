@@ -977,6 +977,19 @@ color: #e7ba74;
     }
 }
 
+/* Estilo de fondo para desktop */
+.desktop-bg {
+    background-image: url('images/slider/1.jpg');
+}
+
+/* Cambia la imagen de fondo para pantallas de menos de 768px (móviles) */
+@media screen and (max-width: 768px) {
+    .mobile-bg {
+        background-image: url('images/slider/2.jpg');
+    }
+}
+
+
 
 /* =======  Section & Title style  ======= */
 .section-padding {
