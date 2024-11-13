@@ -177,15 +177,16 @@ a[href^="tel"] {
     background: #fff;
     background-image: url('images/slider/flor02.svg'); /* Cambia a la ruta de tu imagen de la flor */
     background-repeat: no-repeat;
-    background-position: left -30px bottom -110px; /* Posición de la flor en la esquina inferior izquierda */
-    background-size: 800px; /* Ajusta el tamaño de la flor según lo necesites */
+    background-position: left -30px top 110px; /* Posición de la flor en la esquina inferior izquierda */
+    background-size: 900px; /* Ajusta el tamaño de la flor según lo necesites */
 }
 @media (max-width: 992px) {
     .bg-fixed {
         background: #fff;
         background-image: url('images/slider/flor02.svg');
-        background-position: left -350px bottom;
+        background-position: left -350px top -50px;
         background-size: 800px;
+        background-repeat: no-repeat;
     ;}
 }
 .p-40 {
@@ -1265,20 +1266,18 @@ color: #e7ba74;
     z-index: 1;
 }
 #countdown .section-head span {
-    display: block;
-    position: relative;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: #1b1b1b;
-    margin-bottom: 5px;
+    font-size: 100px;
+    color: #e7ba74;
+    vertical-align: middle;
 }
 #countdown .section-head h2 {
     color: #1b1b1b;
     font-weight: 400;
     font-size: 60px;
+    font-family: 'Cinzel', serif;
     margin-bottom: 0px;
 }
+
 #countdown .section-head h6 {
     color: #1b1b1b;
     font-size: 30px;
