@@ -117,7 +117,7 @@ img {
     color: #fff;
 }
 .bg-cream {
-    background: #faf8f7;
+    background: #fff;
 }
 .o-hidden {
     overflow: hidden;
@@ -1095,9 +1095,9 @@ color: #e7ba74;
 }
 
 .bride-groom .img {
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border-radius: 0%;
     overflow: hidden;
     margin: 0 auto 20px;
 }
@@ -1107,7 +1107,10 @@ color: #e7ba74;
 .bride-groom .info h6 {
     font-size: 16px;
     margin-bottom: 10px;
-    font-family: 'Didact Gothic', sans-serif;
+    color: #1b1b1b;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Cinzel', serif;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -1123,6 +1126,7 @@ color: #e7ba74;
 }
 .bride-groom .info p {
     margin-top: 10px;
+    font-size: 17px;
 }
 .bride-groom .info .social {
   margin-top: 10px;
