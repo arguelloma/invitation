@@ -607,11 +607,9 @@ input[type=radio]:checked:before {
     color: #666;
 }
 .nav-scroll .logo {
-    width: 240px;
+    width: 60px;
 }
-.nav-scroll .logo-img {
-    margin-bottom: 0px;
-}
+
 .nav-scroll .logo-wrapper .logo h2 {
     font-family: 'Alex Brush', cursive;
     font-size: 36px;
@@ -812,6 +810,22 @@ color: #e7ba74;
         padding: 15px;
         background-color: #fff;
     }
+}
+
+/* Logo inicial */
+.no-scroll-logo {
+    display: block;
+}
+.scroll-logo {
+    display: none;
+}
+
+/* Mostrar el logo alternativo cuando se hace scroll */
+.nav-scroll .no-scroll-logo {
+    display: none;
+}
+.nav-scroll .scroll-logo {
+    display: block;
 }
 
 /* ======= Page Header style ======= */
@@ -2503,7 +2517,7 @@ overflow: hidden !important;
         margin-left: 0px;
     }
     .nav-scroll .logo {
-        width: 150px;
+        width: 60px;
     }
     .logo-img {
         margin-bottom: 0px;
