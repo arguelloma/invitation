@@ -174,11 +174,19 @@ a[href^="tel"] {
     text-decoration: none;
 }
 .bg-fixed {
-    background-attachment: fixed;
+    background: #fff;
+    background-image: url('images/slider/flor02.svg'); /* Cambia a la ruta de tu imagen de la flor */
+    background-repeat: no-repeat;
+    background-position: left -30px bottom -110px; /* Posición de la flor en la esquina inferior izquierda */
+    background-size: 800px; /* Ajusta el tamaño de la flor según lo necesites */
 }
 @media (max-width: 992px) {
     .bg-fixed {
-    background-attachment: initial;}
+        background: #fff;
+        background-image: url('images/slider/flor02.svg');
+        background-position: left -350px bottom;
+        background-size: 800px;
+    ;}
 }
 .p-40 {
     padding: 40px;
@@ -1259,29 +1267,30 @@ color: #e7ba74;
 #countdown .section-head span {
     display: block;
     position: relative;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Cinzel', serif;
     font-weight: 400;
     font-size: 18px;
-    color: #fff;
+    color: #1b1b1b;
     margin-bottom: 5px;
 }
 #countdown .section-head h2 {
-    color: #fff;
+    color: #1b1b1b;
     font-weight: 400;
     font-size: 60px;
     margin-bottom: 0px;
 }
 #countdown .section-head h6 {
-    color: #fff;
-    font-size: 14px;
+    color: #1b1b1b;
+    font-size: 30px;
     font-weight: 400;
+    font-family: 'Cinzel', serif;
     letter-spacing: 5px;
     text-transform: uppercase;
     font-family: 'Didact Gothic', sans-serif;
     margin-bottom: 10px;
 }
 #countdown .section-head p {
-        color: #FFF;
+    color: #1b1b1b;
     font-size: 24px;
     margin-bottom: 0;
 }
@@ -1290,13 +1299,13 @@ color: #e7ba74;
     padding: 0;
 }
 #countdown li {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Didact Gothic', serif;
     font-weight: 400;
     display: inline-block;
-    font-size: 12px;
+    font-size: 17px;
     list-style-type: none;
     padding: 15px;
-    color: #fff;
+    color: #1b1b1b;
     line-height: 4em;
     text-align: center;
     text-transform: uppercase;
@@ -1307,7 +1316,7 @@ color: #e7ba74;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 70px;
     font-weight: 700;
-    color: #fff;
+    color: #1b1b1b;
     letter-spacing: -1px;
 }
 @media all and (max-width: 768px) {
