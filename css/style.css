@@ -823,6 +823,7 @@ color: #e7ba74;
 
 /* Logo inicial */
 .no-scroll-logo {
+    width: 60px;
     display: block;
 }
 .scroll-logo {
