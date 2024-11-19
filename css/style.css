@@ -1203,6 +1203,21 @@ color: #e7ba74;
     margin-right: auto;
 }
 
+.story.all figure {
+    margin-left: 150;
+    width: 100%;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 54px;
+    font-family: 'Cinzel', serif;
+}
+
 .story .caption {
     background: #faf8f7;
     position: absolute;
@@ -1227,7 +1242,7 @@ color: #e7ba74;
     font-family: 'Alex Brush', cursive;
 }
 .story .caption h6 {
-    color: #e7ba74;
+    color: #1b1b1b;
     font-family: 'Didact Gothic', sans-serif;
     font-size: 12px;
     margin-bottom: 10px;
@@ -1237,10 +1252,14 @@ color: #e7ba74;
 .story .caption p {
     margin-bottom: 0px;
 }
+@media (min-width: 992px) {
+    .story .caption {
+        display: none;
+    }
+}
 @media (max-width: 991.98px) {
     .story figure {
-        width: auto;
-        margin: 0;
+        display: none;
     }
     .story .caption {
         position: relative;
@@ -1253,7 +1272,26 @@ color: #e7ba74;
         transform: translate(0, 0);
     }
     .story .caption h4 {
-    font-size: 36px;
+        color: #1b1b1b;
+        font-family: 'Cinzel Decorative', serif;
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    .story .caption h6 {
+        color: #1b1b1b;
+        font-family: 'Cinzel', serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    .story .caption p {
+        font-size: 15px;
     }
 }
 
@@ -1773,6 +1811,7 @@ overflow: hidden !important;
     position: relative;
     overflow: hidden;
     border-radius: 0;
+
 }
 .gallery-box .gallery-img:after {
     content: " ";
@@ -1821,6 +1860,12 @@ overflow: hidden !important;
 .gallery-box:hover .gallery-img>img {
     transform: scale(1.05);
 }
+.gallery-box .gallery-img > img {
+    width: 100%; /* Para que se adapten al contenedor */
+    height: 300px; /* Ajusta a la altura deseada */
+    object-fit: cover; /* Recorta las imágenes para mantener el aspecto */
+}
+
 
 
 /* ======= Blog style ======= */
