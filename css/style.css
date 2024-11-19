@@ -1261,6 +1261,12 @@ color: #e7ba74;
     .story figure {
         display: none;
     }
+    .center-text {
+        font-size: 30px;
+        margin-bottom: 50px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
     .story .caption {
         position: relative;
         left: 0;
