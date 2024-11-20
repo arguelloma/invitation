@@ -26,6 +26,58 @@
 24. Overlay Effect Bg image
 
 ------------------------------------------------------------------- */
+/* =======  Dress Code Style  ======= */
+.color-img {
+    width: 215px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+#outfit {
+    position: relative;
+    z-index: 30;
+    background-image: url('images/slider/flor03.svg'); /* Cambia a la ruta de tu imagen de la flor */
+    background-repeat: no-repeat;
+    background-position: right -150px bottom 200px; /* Posición de la flor en la esquina inferior izquierda */
+    background-size: 500px; /* Ajusta el tamaño de la flor según lo necesites */
+}
+
+@media screen and (max-width: 768px) {
+    #outfit {
+        position: relative;
+        z-index: 30;
+        background-image: url('images/slider/flor01.svg'); /* Cambia a la ruta de tu imagen de la flor */
+        background-repeat: no-repeat;
+        background-position: left -150px bottom 600px; /* Posición de la flor en la esquina inferior izquierda */
+        background-size: 400px; /* Ajusta el tamaño de la flor según lo necesites */
+    }
+}
+
+/* Estilos específicos para el bloque con el ID 'dress-code' */
+#outfit h4.section-subtitle {
+    font-family: 'Serenity', sans-serif;
+    display: block;
+    color: #1b1b1b;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+#outfit p {
+    text-align: justify;
+}
+
+#outfit a {
+    text-decoration: underline;
+    color: black;
+}
+
+#outfit a:hover {
+    color: black;
+}
+
 
 
 /* =======  Default style  ======= */
