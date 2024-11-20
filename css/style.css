@@ -1069,11 +1069,9 @@ color: #e7ba74;
     .swiper-rtl .swiper-button-next {
         display: none !important;
     }
-
     .swiper-button-lock {
         display: none !important;
     }
-
     .swiper-pagination {
         display: none !important;
     }
