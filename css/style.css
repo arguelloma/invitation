@@ -1791,6 +1791,7 @@ overflow: hidden !important;
 
 
 /* =======  Gallery style  ======= */
+
 .gallery-menu li a {
         cursor: pointer;
     display: block;
@@ -1873,7 +1874,67 @@ overflow: hidden !important;
     object-fit: cover; /* Recorta las imágenes para mantener el aspecto */
 }
 
+/* Estilos generales para la galería */
+.gallery-box {
+    overflow: hidden;
+    position: relative;
+}
+.gallery-box .gallery-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+.gallery-box .gallery-img>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
+/* Desktop */
+@media (min-width: 769px) {
+    .gallery-filter {
+        display: block !important; /* Mostrar galería estática en pantallas grandes */
+    }
+    
+    .swiper-container {
+        display: none !important; /* Ocultar el carrusel Swiper en pantallas grandes */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .gallery-filter {
+        display: none !important; /* Ocultar la galería estática en móviles */
+    }
+
+    .swiper-container {
+        display: block !important; /* Mostrar el carrusel Swiper en móviles */
+    }
+
+    /* Estilos para Swiper en móviles */
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Controles de navegación */
+    .swiper-button-next, .swiper-button-prev {
+        color: black;       /* Cambia el color de las flechas si no se ven bien */
+    }
+}
 
 /* ======= Blog style ======= */
 .marybrian-blog .img {

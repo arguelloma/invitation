@@ -17,10 +17,7 @@
     <link rel="stylesheet" href="css/YouTubePopUp.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-        <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
        <!-- Preloader -->
@@ -316,13 +313,13 @@
                     <h6 class="section-subtitle">Galería</h6>
                 </div>
             </div>
+
+            <!-- Galería estática (para desktop) -->
             <div class="row gallery-filter">
                 <div class="col-md-4 gallery-item ceremony">
                     <a href="images/gallery/1.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/1.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
@@ -330,17 +327,13 @@
                     <a href="images/gallery/2.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/2.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 gallery-item ceremony">
+                <div class="col-md-4 gallery-item party">
                     <a href="images/gallery/3.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/3.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
@@ -348,35 +341,27 @@
                     <a href="images/gallery/4.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/4.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 gallery-item ceremony">
+                <div class="col-md-4 gallery-item party">
                     <a href="images/gallery/5.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/5.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 gallery-item ceremony">
+                <div class="col-md-4 gallery-item party">
                     <a href="images/gallery/6.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/6.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 gallery-item ceremony">
+                <div class="col-md-4 gallery-item party">
                     <a href="images/gallery/7.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/7.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
@@ -384,17 +369,13 @@
                     <a href="images/gallery/8.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/8.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 gallery-item ceremony">
+                <div class="col-md-4 gallery-item party">
                     <a href="images/gallery/9.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/9.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
@@ -402,46 +383,100 @@
                     <a href="images/gallery/10.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/10.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 gallery-item ceremony">
+                <div class="col-md-4 gallery-item party">
                     <a href="images/gallery/11.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/11.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 gallery-item ceremony">
+                <div class="col-md-4 gallery-item party">
                     <a href="images/gallery/12.jpg" class="img-zoom">
                         <div class="gallery-box">
                             <div class="gallery-img"> <img src="images/gallery/12.jpg" class="img-fluid mx-auto d-block" alt=""> </div>
-                            <div class="gallery-detail">
-                            </div>
                         </div>
                     </a>
+                </div>
+            </div>
+
+            <!-- Carrusel Swiper (solo para móviles) -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/gallery/1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/2.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/3.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/4.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/5.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/6.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/7.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/8.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/9.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/10.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/11.jpg" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/gallery/12.jpg" >
+                    </div>
+                </div>
+
+                <!-- Agregar controles de Swiper -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Dress Code section -->
+     <div id="outfit" class="bride-groom clear section-padding bg-cream" data-scroll-index="3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30 animate-box" data-animate-effect="fadeInUp">
+                    <h6 class="section-subtitle">Código de Vestimenta</h6>
+                </div>
+                <div class="col-md-4 offset-md-2 text-center animate-box" data-animate-effect="fadeInLeft">
+                    <div class="item mb-30">
+                        <div class="img"> <img src="images/colores.png" alt=""> </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center animate-box" data-animate-effect="fadeInRight">
+                    <div class="item mb-30">
+                        <h6 class="section-subtitle">Boda Elegante - Formal</h6>
+                        <a href="https://www.pinterest.com/darianasoto13/vestimenta-elegante-formal/">Algunas ideas aquí</a>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center mb-30 animate-box">
+                    <p>Les invitamos a lucir ropa de vestir elegante y sofisticada. Para las damas, se sugiere un vestido largo, de cóctel o una blusa elegante con falda o pantalón de vestir. Los caballeros pueden optar por camisa de vestir con pantalones formales; no es necesario el uso de traje completo. Queremos que todos se sientan especiales y cómodos en este día tan importante.</p>
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- Banner section -->
-    <div id="banner" class="section-padding bg-img bg-fixed" data-overlay-dark="1" data-background="images/banner/1.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="section-head col-md-12">
-                    <h6>Agenda la fecha</h6>
-                    <h2>¡Espero verte!</h2>
-                    <h1>26.03.2023</h1>
-                    <h1><i class="ti-heart"></i></h1>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- When & Where section -->
     <div id="whenwhere" class="when-where section-padding" data-scroll-index="6">
         <div class="container">
@@ -534,33 +569,7 @@
         </div>
 		</div>
 	</div>
-    <!-- Dress Code section -->
-    <div id="outfit" class="bride-groom clear section-padding bg-cream" data-scroll-index="3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center mb-30 animate-box" data-animate-effect="fadeInUp">
-                    <h6 class="section-subtitle">Código de Vestimenta</h6>
-                    <h2 class="section-title">Formal</h2>
-                </div>
-                <div class="col-md-4 offset-md-2 text-center animate-box" data-animate-effect="fadeInLeft">
-                    <div class="item mb-30">
-                        <div class="img"> <img src="images/dress.png" alt=""> </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center animate-box" data-animate-effect="fadeInRight">
-                    <div class="item mb-30">
-                        <div class="img"> <img src="images/suit.png" alt=""> </div>
-                    </div>
-                </div>
-                <div class="col-md-12 text-center mb-30 animate-box">
-                    <p>Vestimenta de ocasión formal<br>
-                       Hombres: Traje<br>
-                       Mujeres: Vestido<br> 
-                       Por favor no utilizar vestidos blancos, jeans, ni tennis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- Events section -->
     <div id="events" class="events section-padding" data-scroll-index="4">
         <div class="container">
@@ -819,6 +828,27 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/YouTubePopUp.js"></script>
     <script src="js/template.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        // Inicializar Swiper solo en móvil
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
 
 </body>
 </html>
